@@ -5,7 +5,7 @@ let apiRequestStatus: "pending" | "success" | "error";
 // apiRequestStatus = "Don3" (only pending,success adn error allowed)
 
 let orders = ["22", "23", "25", "30"];
-let currentOrder: string | undefined;
+let currentOrder: string | undefined; // (currentOrder = any, if not given)
 for (let order of orders) {
   if (order == "25") {
     currentOrder = order;
